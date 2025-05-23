@@ -29,7 +29,7 @@
 
 ## 🖼️ Screenshots
 
-> _(Add screenshots of the Welcome Page, Quiz UI, and Scoreboard)_
+![Image](https://github.com/user-attachments/assets/3aafb911-24b4-44f5-9df7-642ace481860)
 
 ---
 
