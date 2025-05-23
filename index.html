@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <!-- scoreboard page -->
+
+    <section class="scoreboard-sec common-sec hidden">
+        <div class="header">
+            <p>Name</p>
+            <p>Score</p>
+        </div>
+        <div class="scores">
+
+        </div>
+        <button class="scoreboard-back-btn ">Go Back to Quiz</button>
+    </section>
+
+
+    <!-- welcome page -->
+    <section class=" welcome-sec common-sec">
+        <div class="rules">Some rules of the Quiz</div>
+        <ol class="instructions">
+            <li>You will have <span class="higlight-blue">only 15 seconds</span> per each question.</li>
+            <li>Once you select your answer, it can't be undone.</li>
+            <li>You can't select any option once time goes off.</li>
+            <li>You can't exit from the Quiz while you're playing.</li>
+            <li>You'll get points on the basis of your correct answers.</li>
+        </ol>
+        
+        <div class="user-name-box">
+            <input type="text" class="user-name-field" placeholder="Enter your name" id="">
+            <div class="button-box">
+                <button class="name-submit common-btn">let's go</button>
+                <button class="scoreboard-btn common-btn">View Scoreboard</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- quiz choosing page -->
+    <section class="quiz-choosing  common-sec hidden">
+        <p class="to-choose">Please select your quiz  </p>
+         <form action="">
+
+            <div class="question-num-selector slector">
+                <p>Number of questions:</p>
+                <input type="number" name="" id="" class="input-field num-question" placeholder="Max Questions : 50"  >
+            </div>
+
+            <div class="category-container slector">
+                <p>Select Category:</p>
+                <p class="input-field categories">Any Category <span><i class="fa-solid fa-caret-down cargegory-button "></i></span></p>
+                <div class="category-options options">
+                    <a data-category-number="">Any category</a>
+                    <a data-category-number="21">Sports</a>
+                    <a data-category-number="25">Art</a>
+                    <a data-category-number="27">Animals</a>
+                    <a data-category-number="23">History</a>
+                    <a data-category-number="24">Politics</a>
+                </div>
+            </div>
+
+            <div class="difficulty-container slector">
+                <p>Select difficulty:</p>
+                <p class="input-field difficulties">Any difficutly <span><i class="fa-solid fa-caret-down difficulty-button"></i></span></p>
+                <div class="difficulty-levels options">
+                    <a data-difficulty="">Any Difficulty</a>
+                    <a data-difficulty="easy" >Easy</a>
+                    <a data-difficulty="medium">Medium</a>
+                    <a data-difficulty="hard">Hard</a>
+                    
+                </div>
+            </div>
+
+            <button class="submit-button">Start Quiz</button>
+
+         </form>
+    </section>
+
+      <!-- quiz page -->
+    <section class="common-sec quiz-sec hidden">
+        <div class="top">
+            <p class="quiz-author">Junior's Quiz App</p>
+            <p class="timer-container">Time left <span class="time-value">10</span> </p>
+        </div>
+
+        <div class="middle">
+            <p class="question"><span class="question-num">01</span>
+            . What does HTML stands for ?</p>
+            <div class="choices">
+                <p class="choice c1">Hyper text Mark</p>
+                <p class="choice c2">Hyper text Mark</p>
+                <p class="choice c3">Hyper text Mark</p>
+                <p class="choice c4">Hyper text Mark</p>
+            </div>
+        </div>
+
+        <div class="end">
+            <p><span class="current-question-num">1</span> of <span class="total-question-num" >5</span> Questions</p>
+            <button class="next-btn">Next Question</button>
+        </div>
+    </section>
+     
+    <section class="common-sec result-page hidden">
+        <div class="celebration-box">
+            <img src="assets/images/party_popper.jpg" class="clebration-img" alt="">
+        </div>
+        <p class="congradulating-para">You've completed the Quiz! and nice 😎 <br> you got <span class="correct-display"></span> out of  <span class="total-display"></span>  </p>
+
+        <button class="quit-quiz">Quit Quiz</button>
+    </section>
+    <!-- results page -->
+    <script src="script.js"></script>
+</body>
+</html>
